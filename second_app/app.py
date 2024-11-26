@@ -9,5 +9,11 @@ def index():
     return render_template("index.html", mylist=mylist)
 
 
+@app.route("/other")
+def other():
+    myvalue = 'Other Page'
+    return render_template("other.html", myvalue=myvalue)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
