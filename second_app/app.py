@@ -11,7 +11,7 @@ def index():
 
 @app.route("/other")
 def other():
-    myvalue = 'Other Page'
+    myvalue = 'Some Text'
     return render_template("other.html", myvalue=myvalue)
 
 

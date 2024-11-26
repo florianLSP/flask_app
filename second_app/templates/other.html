@@ -1,6 +1,11 @@
 {% extends "base.html" %}
-{% block title %}{{ myvalue }} {% endblock %}
+{% block title %}Filters {% endblock %}
 
 {% block content %}
-    <h1>{{myvalue}}</h1>
+    <h1>Filters</h1>
+    <p>{{ myvalue}}</p>
+    <p>{{ myvalue|upper}}</p>
+    <p>{{ myvalue|lower}}</p>
+    <p>{{ myvalue|title}}</p>
+    <p>{{ myvalue|replace('e', 3)}}</p>
 {% endblock %}
