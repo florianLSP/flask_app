@@ -15,5 +15,10 @@ def other():
     return render_template("other.html", myvalue=myvalue)
 
 
+@app.template_filter('reverse_string')
+def reverse_string(s):
+    return s[::-1]
+
+
 if __name__ == "__main__":
     app.run(debug=True)
